@@ -1,0 +1,655 @@
+@font-face {
+  font-family: 'Frutiger Neue';
+  src:  url(font/FrutigerNeueW02-Bd.eot) format("embedded-opentype"),
+        url(font/FrutigerNeueW02-Bd.woff2) format("woff2"),
+        url(font/FrutigerNeueW02-Bd.woff) format("woff"),
+        url(font/FrutigerNeueW02-Bd.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Frutiger Neue';
+  src:  url(font/FrutigerNeueW02-It.eot) format("embedded-opentype"),
+        url(font/FrutigerNeueW02-It.woff2) format("woff2"),
+        url(font/FrutigerNeueW02-It.woff) format("woff"),
+        url(font/FrutigerNeueW02-It.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic
+}
+@font-face {
+  font-family:'Frutiger Neue';
+  src:  url(font/FrutigerNeueW02-Regular.eot) format("embedded-opentype"),
+        url(font/FrutigerNeueW02-Regular.woff2) format("woff2"),
+        url(font/FrutigerNeueW02-Regular.woff) format("woff"),
+        url(font/FrutigerNeueW02-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family:'Frutiger Neue';
+  src:  url(font/FrutigerNeueW02-Light.eot) format("embedded-opentype"),
+        url(font/FrutigerNeueW02-Light.woff2) format("woff2"),
+        url(font/FrutigerNeueW02-Light.woff) format("woff"),
+        url(font/FrutigerNeueW02-Light.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+  font-family: "Frutiger Neue";
+  font-size: 16px;
+  font-weight: normal;
+  overflow: hidden;
+}
+.logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5000;
+  margin: 15px;
+}
+.logo img {
+  background: #fff;
+  width: 200px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.control {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5000;
+}
+
+.control .home-control {
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  margin: 15px;
+  max-width: 240px;
+  background: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.1s;
+  color: #000;
+}
+.control .home-control:hover {
+  background: #f5f5f5;
+}
+.control .zoom-control {
+  margin: 15px;
+}
+.control .zoom-control .zoom-button {
+  text-align: center;
+  float: right;
+  width: 1em;
+  height: 1em;
+  padding: 1em;
+  margin: 0 0 0 15px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s;
+  color: #000;
+}
+.control .zoom-control .zoom-button:hover {
+  background: #f5f5f5;
+}
+.control .zoom-control .zoom-button:active {
+  background: #dfdfdf;
+  color: #000;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  cursor: url(cursor/openhand.cur), default !important;
+}
+.container .zoom-holder .svg-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+}
+.container .zoom-holder .svg-container svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.tooltip {
+  position: absolute;
+  padding: 15px 20px;
+  margin: 25px 0 0 15px;
+  max-width: 350px;
+  min-width: 300px;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.98);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 3000;
+}
+.tooltip.active {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip .title {
+  font-weight: bold;
+  font-size: 1em;
+}
+.tooltip .headline {
+  font-weight: 400;
+  font-size: 0.925em;
+  color: #666;
+}
+.content-container {
+  position: absolute;
+  width: 50vw;
+
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 40000;
+  visibility: hidden;
+  transition: opacity 0.4s;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+.content-container.active {
+  visibility: visible;
+  opacity: 1;
+}
+.content-container .inner {
+  position: relative;
+  padding: 50px 0 0 50px;
+  box-sizing: border-box;
+  height: 100%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 1);
+}
+.content-container .inner .content {
+  height: 100%;
+  padding: 0 50px 50px 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  line-height: 1.5rem;
+}
+.content-container .inner .content::after {
+  display: block;
+  content: ' ';
+  height: 75px;
+  width: 100%;
+}
+.content-container .inner .content h1 {
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  margin: 1rem 0;
+}
+.content-container .inner .content h1 .head-source {
+   display: block;
+   font-weight: normal;
+   font-size: 0.925rem;
+   margin-bottom: 0.1rem;
+   line-height: 1.5rem;
+}
+.content-container .inner .content h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem 0;
+}
+.content-container .inner .content h3 {
+  font-size: 1rem;
+  margin: 1rem 0 0.25rem 0;
+}
+.content-container .inner .content p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+.content-container .inner .content img {
+  display: block;
+  margin: 1rem 0 2rem 0;
+  max-width: 100%;
+}
+.content-container .inner .content a {
+  color: #486376;
+}
+.content-container .inner .content a:hover {
+  color: #000;
+}
+.content-container .inner .content ul {
+  margin-left: 1.5em;
+}
+.content-container .inner .content ul li {
+  margin-bottom: 0.5em;
+}
+.content-container .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  transition: color 0.2s;
+  background: #000;
+  cursor: pointer;
+}
+.content-container .close:hover {
+  color: #888;
+}
+.content-container .close:active {
+  color: #fff;
+}
+
+.moving {
+  cursor: url(cursor/closedhand.cur), move !important;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: text-top;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  float: none;
+  clear: both;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.shape {
+  cursor: pointer;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+.shape .outline {
+  transition: all 0.3s;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1px;
+  fill-opacity: 0;
+  opacity: 1;
+  stroke-opacity: 0;
+}
+.shape.active .outline {
+  stroke-opacity: 1;
+}
+.shape.hover .outline {
+  stroke-opacity: 1;
+}
+
+@media (max-width: 786px) {
+  :root {
+    font-size: 14px;
+  }
+  .content-container {
+    width: 100vw;
+  }
+  .content-container .inner {
+    padding: 50px 0 0 30px;
+  }
+  .content-container .inner .content {
+    padding: 0 30px 50px 0;
+  }
+}
+.anim {
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+#item-5-flag .anim {
+  animation: flag 5s ease-in-out alternate infinite;
+  transform-origin: left center;
+  transform-box: fill-box;
+}
+#item-6-ballon .anim {
+  animation: hover 2s ease-in-out alternate infinite;
+}
+#item-6-satelite .anim {
+  animation: hover 3s ease-in-out 2s alternate infinite;
+}
+#item-6-drone .anim {
+  animation: hover 1s ease-in-out 1s alternate infinite;
+}
+#item-7-phone .anim {
+  animation: flicker-2 5s linear alternate infinite;
+}
+#item-10-noise .anim {
+  animation: vibrate 3s linear alternate infinite;
+}
+#item-11-waves .anim {
+  animation: flicker-2 5s linear 2s alternate infinite;
+}
+#item-12-flying-animals .anim {
+  animation: flap 5s linear infinite;
+}
+#item-15-car-tunnel .anim {
+  animation: flicker 5s linear alternate infinite;
+}
+#item-16-factory .anim {
+  transform-origin: 0% 100%;
+  transform-box: fill-box;
+  animation: smoke 15s ease-in-out alternate infinite;
+}
+#item-20-pump #anim-down {
+  animation: move-down 2s linear infinite;
+}
+#item-20-pump #anim-up {
+  animation: move-up 2s linear infinite;
+}
+#item-22-fish .anim {
+  animation: swim 20s ease-in-out infinite;
+}
+#item-23-windpark .anim {
+  animation: rotate 4s linear infinite;
+  transform-origin: 33% 52%;
+  transform-box: fill-box;
+}
+#item-25-woodpecker .anim {
+  animation: pick 2s linear alternate infinite;
+}
+#item-26-recycle .anim {
+  transform-origin: 0% 100%;
+  transform-box: fill-box;
+  animation: smoke 10s ease-in-out alternate infinite;
+}
+#item-30-tractor {
+  animation: tractor 10s linear alternate infinite;
+}
+#item-31-poisoner .anim {
+  transform-origin: 50% 100%;
+  transform-box: fill-box;
+  animation: wiggle 10s linear alternate infinite;
+}
+#item-32-mosquito .anim {
+  animation: hover-small 2s ease-in-out 0.5s alternate infinite;
+}
+#item-32-mosquito-2 .anim {
+  animation: hover-small 2s ease-in-out 1s alternate infinite;
+}
+
+#item-34-gas .anim {
+  transform-origin: 50% 100%;
+  transform-box: fill-box;
+  animation: grow 10s ease-in-out alternate infinite;
+}
+#item-36-canons .anim {
+  transform-origin: 0% 100%;
+  transform-box: fill-box;
+  animation: blink 10s ease-in-out infinite;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.2, 0);
+  }
+  50%, 100% {
+    transform: scale(1,1);
+  }
+}
+
+@keyframes swim {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1, 1);
+  }
+  6% {
+    transform: translate(-10px, -5px) rotate(0deg) scale(1, 1);
+  }
+  6.3% {
+    transform: translate(-10px, -5px) rotate(10deg) scale(-1, 1);
+  }
+  15% {
+    transform: translate(30px, -20px) rotate(15deg) scale(-1, 1);
+  }
+  15.3% {
+    transform: translate(30px, -20px) rotate(-15deg) scale(1, 1);
+  }
+  28% {
+    transform: translate(-10px, -10px) rotate(-20deg) scale(1, 1);
+  }
+  28.3% {
+    transform: translate(-10px, -10px) rotate(30deg) scale(-1, 1);
+  }
+  32% {
+    transform: translate(0, 0) rotate(40deg) scale(-1, 1);
+  }
+  32.3% {
+    transform: translate(0, 0) rotate(0deg) scale(1, 1);
+  }
+  40%, 60%, 80%, 100% {
+    transform: translate(0, 0) rotate(0deg) scale(1, 1);
+  }
+  50%, 70%, 90% {
+    transform: translate(0, 2px) rotate(0deg) scale(1, 1);
+  }
+}
+
+@keyframes flicker-2 {
+  0%, 4%, 7%, 10%, 15%, 17%, 22%, 25%, 28%, 40%, 46%, 50%, 70%, 75%, 100% {
+    opacity: 0;
+  }
+  1%, 5%, 9%, 14%, 16%, 20%, 24%, 26%, 38%, 45%, 49%, 69%, 71% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes flicker {
+  0%, 4%, 7%, 10%, 100% {
+    opacity: 0;
+  }
+  1%, 5%, 9% {
+    opacity: .2;
+  }
+}
+
+@keyframes flag {
+  0%, 40%, 70%, 100% {
+    transform: scale(0.8, 1) rotate(-1deg) translate(0px, 2px);
+  }
+  10%, 50%, 90% {
+    transform: scale(1, 1) rotate(1deg) translate(0px, 0px);
+  }
+}
+
+@keyframes flap {
+  0%, 4%, 7%, 10%, 14%, 17%, 20%, 24%, 27%, 100% {
+    transform: scale(0.8, 1) rotate(-10deg) translate(0px, 2px);
+  }
+  1%, 5%, 9%, 12%, 16%, 18%, 22%, 26% {
+    transform: scale(1, 1) rotate(10deg) translate(0px, 0px);
+  }
+}
+
+@keyframes move-up {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+}
+@keyframes move-down {
+  0% {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+
+@keyframes switch {
+  0% {
+    stroke: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smoke {
+  0% {
+    transform: scale(1.1,0.95) rotate(2deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(0.95,1.1) rotate(0deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.05,1) rotate(1deg);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(0,0.1) rotate(0);
+  }
+  10% {
+    transform: scale(1,1.5) rotate(0);
+  }
+  80% {
+    transform: scale(1,1.3) rotate(0);
+  }
+  90% {
+    transform: scale(0,0) rotate(10deg);
+  }
+  100% {
+    transform: scale(0,0.5) rotate(10deg);
+  }
+}
+
+@keyframes wiggle {
+  0%, 6%, 12%, 18%, 24%, 30% {
+    transform: rotate(3deg);
+  }
+  3%, 9%, 15%, 21%, 27% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes tractor {
+  0% {
+    transform: translate(-20px, -20px);
+  }
+  25% {
+    transform: translate(-20px, -20px);
+  }
+  75% {
+    transform: translate(40px, 40px);
+  }
+  100% {
+    transform: translate(40px, 40px);
+  }
+}
+
+@keyframes pick {
+  0%, 5%, 10%, 15%, 20%, 25%, 30% {
+    transform: rotate(0deg);
+  }
+  2%, 7%, 12%, 17%, 22%, 27%, 32% {
+    transform: rotate(20deg);
+  }
+  4%, 9%, 14%, 19%, 24%, 29%, 34% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes vibrate {
+  0%, 5%, 10%, 15%, 20%, 25%, 30% {
+    transform: translate(0px, -1px);
+  }
+  2%, 7%, 12%, 17%, 22%, 27%, 32% {
+    transform: translate(1px, -1px);
+  }
+  4%, 9%, 14%, 19%, 24%, 29%, 34% {
+    transform: translate(-1px, 1px);
+  }
+  100% {
+    transform: translate(-1px, 1px);
+  }
+}
+@keyframes hover-small {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}

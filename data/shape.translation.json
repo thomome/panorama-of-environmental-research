@@ -1,0 +1,443 @@
+{
+    "shapes": [{
+      "id": "item-1-footprint",
+      "number": "1",
+      "de": "Ziele und Messung einer Grünen Wirtschaft in der Schweiz (Fussabdruck)",
+      "fr": "Objectifs et suivi de l’économie verte en Suisse (empreinte écologique)",
+      "cat_de": "Grüne Wirtschaft",
+      "cat_fr": "Économie verte",
+      "content": "green_economy"
+    },{
+      "id": "item-1-stock-market",
+      "number": "1",
+      "de": "Ziele und Messung einer Grünen Wirtschaft in der Schweiz (Fussabdruck)",
+      "fr": "Objectifs et suivi de l’économie verte en Suisse (empreinte écologique)",
+      "cat_de": "Grüne Wirtschaft",
+      "cat_fr": "Économie verte",
+      "content": "green_economy"
+    },{
+      "id": "item-2-shoping",
+      "number": "2",
+      "de": "Wege zu einem nachhaltigen Konsum",
+      "fr": "Comment évoluer vers une consommation et une production durables",
+      "cat_de": "Grüne Wirtschaft",
+      "cat_fr": "Économie verte",
+      "content": "green_economy"
+    },{
+      "id": "item-2-market",
+      "number": "2",
+      "de": "Wege zu einem nachhaltigen Konsum",
+      "fr": "Comment évoluer vers une consommation et une production durables",
+      "cat_de": "Grüne Wirtschaft",
+      "cat_fr": "Économie verte",
+      "content": "green_economy"
+    },{
+      "id": "item-3-billboard",
+      "number": "3",
+      "de": "Wirkung der Kommunikation auf das Umweltverhalten und die Akzeptanz von Umweltlösungen",
+      "fr": "Effets de la communication sur le comportement en matière d’environnement et sur l’acceptation des solutions aux problèmes écologiques",
+      "cat_de": "Umweltkommunikation",
+      "cat_fr": "Communication dans le domaine de l’environnement",
+      "content": "environmental_communication"
+    },{
+      "id": "item-4-brown-building",
+      "number": "4",
+      "de": "Analyse und Monitoring der Berufsbildung",
+      "fr": "Analyse et monitoring de la formation professionnelle",
+      "cat_de": "Umweltbildung",
+      "cat_fr": "Éducation à l’environnement",
+      "content": "environmental_education"
+    },{
+      "id": "item-5-flag",
+      "number": "5",
+      "de": "Internationale Umweltgouvernanz",
+      "fr": "Gouvernance mondiale de l’environnement",
+      "cat_de": "Internationales",
+      "cat_fr": "Affaires internationales",
+      "content": "international"
+    },{
+      "id": "item-6-satelite",
+      "number": "6",
+      "de": "Datenerhebung und datengestützte Modellierung",
+      "fr": "Relevé des données et modélisation fondée sur celles-ci",
+      "cat_de": "Umweltbeobachtung » Systemwissen",
+      "cat_fr": "Observation de l’environnement » Savoir systémique",
+      "content": "environmental_observation"
+    },{
+      "id": "item-6-ballon",
+      "number": "6",
+      "de": "Datenerhebung und datengestützte Modellierung",
+      "fr": "Relevé des données et modélisation fondée sur celles-ci",
+      "cat_de": "Umweltbeobachtung » Systemwissen",
+      "cat_fr": "Observation de l’environnement » Savoir systémique",
+      "content": "environmental_observation"
+    },{
+      "id": "item-6-drone",
+      "number": "6",
+      "de": "Datenerhebung und datengestützte Modellierung",
+      "fr": "Relevé des données et modélisation fondée sur celles-ci",
+      "cat_de": "Umweltbeobachtung » Systemwissen",
+      "cat_fr": "Observation de l’environnement » Savoir systémique",
+      "content": "environmental_observation"
+    },{
+      "id": "item-6-antenna",
+      "number": "6",
+      "de": "Datenerhebung und datengestützte Modellierung",
+      "fr": "Relevé des données et modélisation fondée sur celles-ci",
+      "cat_de": "Umweltbeobachtung » Systemwissen",
+      "cat_fr": "Observation de l’environnement » Savoir systémique",
+      "content": "environmental_observation"
+    },{
+      "id": "item-7-phone",
+      "number": "7",
+      "de": "Bevölkerungsexposition in Bezug auf Umweltbelastungen",
+      "fr": "Exposition de la population aux nuisances environnementales",
+      "cat_de": "Umweltbeobachtung",
+      "cat_fr": "Observation de l’environnement",
+      "content": "environmental_observation"
+    },{
+      "id": "item-8-bank",
+      "number": "8",
+      "de": "Kohärenz des Umweltrechts",
+      "fr": "Cohérence du droit de l’environnement",
+      "cat_de": "Umweltrecht",
+      "cat_fr": "Droit de l’environnement",
+      "content": "environmental_law"
+    },{
+      "id": "item-9-wall",
+      "number": "9",
+      "de": "Emissionsbegrenzung",
+      "fr": "Limitation des émissions à la source",
+      "cat_de": "Lärmbekämpfung und Ruheschutz",
+      "cat_fr": "Lutte contre le bruit et préservation d’un environnement calme",
+      "content": "noise"
+    },{
+      "id": "item-10-noise",
+      "number": "10",
+      "de": "Erschütterungen",
+      "fr": "Vibrations",
+      "cat_de": "Lärmbekämpfung und Ruheschutz",
+      "cat_fr": "Lutte contre le bruit et préservation d’un environnement calme",
+      "content": "noise"
+    },{
+      "id": "item-11-waves",
+      "number": "11",
+      "de": "Auswirkungen von NIS auf die Gesundheit der Bevölkerung",
+      "fr": "Effets des RNI sur la santé de la population",
+      "cat_de": "Nichtionisierende Strahlung",
+      "cat_fr": "Rayonnement non ionisant",
+      "content": "nis_protection"
+    },{
+      "id": "item-12-flying-animals",
+      "number": "12",
+      "de": "Störwirkung von künstlichem Licht in der Umwelt",
+      "fr": "Effets perturbateurs de la lumière artificielle dans l’environnement",
+      "cat_de": "Nichtionisierende Strahlung",
+      "cat_fr": "Rayonnement non ionisant",
+      "content": "nis_protection"
+    },{
+      "id": "item-13-poison-water",
+      "number": "13",
+      "de": "Untersuchungen von belasteten Standorten und anderen Bodenbelastungen",
+      "fr": "Études concernant des sites contaminés et d’autres pollutions du sol",
+      "cat_de": "Altlasten",
+      "cat_fr": "Sites contaminés",
+      "content": "contaminated_sites"
+    },{
+      "id": "item-14-fence",
+      "number": "14",
+      "de": "Sanierung und Überwachung",
+      "fr": "Assainissements et surveillance",
+      "cat_de": "Altlasten",
+      "cat_fr": "Sites contaminés",
+      "content": "contaminated_sites"
+    },{
+      "id": "item-15-harmful-gas",
+      "number": "15",
+      "de": "Auswirkungen von Luftschadstoffen auf die Gesundheit der Bevölkerung und die Ökosysteme",
+      "fr": "Effets des polluants atmosphériques sur la santé de la population et sur les écosystèmes",
+      "cat_de": "Luft",
+      "cat_fr": "Air",
+      "content": "air"
+    },{
+      "id": "item-15-car-tunnel",
+      "number": "15",
+      "de": "Auswirkungen von Luftschadstoffen auf die Gesundheit der Bevölkerung und die Ökosysteme",
+      "fr": "Effets des polluants atmosphériques sur la santé de la population et sur les écosystèmes",
+      "cat_de": "Luft",
+      "cat_fr": "Air",
+      "content": "air"
+    },{
+      "id": "item-16-factory",
+      "number": "16",
+      "de": "Weiterentwicklungen von Massnahmen zur Reduktion der Luftbelastung",
+      "fr": "Développement des mesures de réduction de la pollution atmosphérique",
+      "cat_de": "Luft",
+      "cat_fr": "Air",
+      "content": "air"
+    },{
+      "id": "item-17-acre",
+      "number": "17",
+      "de": "Beurteilung der biologischen und chemischen Belastungen",
+      "fr": "Évaluation des atteintes biologiques et chimiques",
+      "cat_de": "Boden",
+      "cat_fr": "Sol",
+      "content": "soil"
+    },{
+      "id": "item-18-water-cycle",
+      "number": "18",
+      "de": "Hydrologisches Systemverständnis und Gewässermonitoring",
+      "fr": "Compréhension systémique des processus hydrologiques et monitoring des eaux",
+      "cat_de": "Wasser",
+      "cat_fr": "Eau",
+      "content": "water"
+    },{
+      "id": "item-19-water-cycle",
+      "number": "19",
+      "de": "Sauberes Wasser / Umweltverhalten und Auswirkungen von Schadstoffen",
+      "fr": "Eau propre/comportement des polluants dans l’environnement et conséquences",
+      "cat_de": "Wasser",
+      "cat_fr": "Eau",
+      "content": "water"
+    },{
+      "id": "item-19-water-pipe",
+      "number": "19",
+      "de": "Sauberes Wasser / Umweltverhalten und Auswirkungen von Schadstoffen",
+      "fr": "Eau propre/comportement des polluants dans l’environnement et conséquences",
+      "cat_de": "Wasser",
+      "cat_fr": "Eau",
+      "content": "water"
+    },{
+      "id": "item-19-sewage-plant",
+      "number": "19",
+      "de": "Sauberes Wasser / Umweltverhalten und Auswirkungen von Schadstoffen",
+      "fr": "Eau propre/comportement des polluants dans l’environnement et conséquences",
+      "cat_de": "Wasser",
+      "cat_fr": "Eau",
+      "content": "water"
+    },{
+      "id": "item-20-dam",
+      "number": "20",
+      "de": "Nachhaltige Nutzung von Wasser und Gewässern, Kälte und Wärmenutzung von Gewässern",
+      "fr": "Utilisation durable de l’eau et des eaux, utilisation du froid et de la chaleur des eaux",
+      "cat_de": "Wasser",
+      "cat_fr": "Eau",
+      "content": "water"
+    },{
+      "id": "item-20-pump",
+      "number": "20",
+      "de": "Nachhaltige Nutzung von Wasser und Gewässern, Kälte und Wärmenutzung von Gewässern",
+      "fr": "Utilisation durable de l’eau et des eaux, utilisation du froid et de la chaleur des eaux",
+      "cat_de": "Wasser",
+      "cat_fr": "Eau",
+      "content": "water"
+    },{
+      "id": "item-21-renaturation",
+      "number": "21",
+      "de": "Wirkungskontrolle von Revitalisierungsmassnahmen",
+      "fr": "Suivi des mesures de revitalisation",
+      "cat_de": "Wasser",
+      "cat_fr": "Eau",
+      "content": "water"
+    },{
+      "id": "item-22-fish",
+      "number": "22",
+      "de": "Erhaltung von genetischer Vielfalt, Arten und Lebensräumen",
+      "fr": "Préservation de la diversité du patrimoine génétique, des espèces et des habitats",
+      "cat_de": "Biodiversität",
+      "cat_fr": "Biodiversité",
+      "content": "biodiversity"
+    },{
+      "id": "item-22-pool",
+      "number": "22",
+      "de": "Erhaltung von genetischer Vielfalt, Arten und Lebensräumen",
+      "fr": "Préservation de la diversité du patrimoine génétique, des espèces et des habitats",
+      "cat_de": "Biodiversität",
+      "cat_fr": "Biodiversité",
+      "content": "biodiversity"
+    },{
+      "id": "item-22-capricorn",
+      "number": "22",
+      "de": "Erhaltung von genetischer Vielfalt, Arten und Lebensräumen",
+      "fr": "Préservation de la diversité du patrimoine génétique, des espèces et des habitats",
+      "cat_de": "Biodiversität",
+      "cat_fr": "Biodiversité",
+      "content": "biodiversity"
+    },{
+      "id": "item-23-windpark",
+      "number": "23",
+      "de": "Landschaftsleistungen",
+      "fr": "Prestations paysagères",
+      "cat_de": "Landschaft",
+      "cat_fr": "Paysage",
+      "content": "landscape"
+    },{
+      "id": "item-24-lumber",
+      "number": "24",
+      "de": "Holznutzung und Waldwirtschaft",
+      "fr": "Utilisation du bois et économie forestière",
+      "cat_de": "Wald und Holz",
+      "cat_fr": "Forêt et bois",
+      "content": "forest"
+    },{
+      "id": "item-25-woodpecker",
+      "number": "25",
+      "de": "Waldschutz und Waldbiodiversität",
+      "fr": "Protection des forêts et biodiversité forestière",
+      "cat_de": "Wald und Holz",
+      "cat_fr": "Forêt et bois",
+      "content": "forest"
+    },{
+      "id": "item-26-recycle",
+      "number": "26",
+      "de": "Abfallanlagen und Rückgewinnung von Wertstoffen",
+      "fr": "Installations de traitement des déchets et récupération de matières valorisables",
+      "cat_de": "Abfall- und Rohstoffmanagement",
+      "cat_fr": "Gestion des déchets et des matières premières",
+      "content": "waste"
+    },{
+      "id": "item-27-trash",
+      "number": "27",
+      "de": "Verwendung von Recyclingbaustoffen und Deponien der Zukunft",
+      "fr": "Emploi de matériaux de construction recyclés et décharges de l’avenir",
+      "cat_de": "Abfall- und Rohstoffmanagement",
+      "cat_fr": "Gestion des déchets et des matières premières",
+      "content": "waste"
+    },{
+      "id": "item-28-pet",
+      "number": "28",
+      "de": "Phosphor-Rückgewinnung",
+      "fr": "Récupération du phosphore",
+      "cat_de": "Abfall- und Rohstoffmanagement",
+      "cat_fr": "Gestion des déchets et des matières premières",
+      "content": "waste"
+    },{
+      "id": "item-29-littering",
+      "number": "29",
+      "de": "Littering und Abfallvermeidung",
+      "fr": "Littering et réduction des déchets",
+      "cat_de": "Abfall- und Rohstoffmanagement",
+      "cat_fr": "Gestion des déchets et des matières premières",
+      "content": "waste"
+    },{
+      "id": "item-30-tractor",
+      "number": "30",
+      "de": "Eintrag in die Umwelt, Abbaubarkeit und Umweltverteilung von Chemikalien, Bioziden, Pflanzenschutzmitteln",
+      "fr": "Apports dans l’environnement, dégradabilité et répartition environnementale des produits chimiques, biocides et phytosanitaires",
+      "cat_de": "Chemikaliensicherheit",
+      "cat_fr": "Sécurité des produits chimiques",
+      "content": "chemical_safety"
+    },{
+      "id": "item-30-poison-barrels",
+      "number": "30",
+      "de": "Eintrag in die Umwelt, Abbaubarkeit und Umweltverteilung von Chemikalien, Bioziden, Pflanzenschutzmitteln",
+      "fr": "Apports dans l’environnement, dégradabilité et répartition environnementale des produits chimiques, biocides et phytosanitaires",
+      "cat_de": "Chemikaliensicherheit",
+      "cat_fr": "Sécurité des produits chimiques",
+      "content": "chemical_safety"
+    },{
+      "id": "item-31-poisoner",
+      "number": "31",
+      "de": "Ökotoxikologische Auswirkungen von Chemikalien, Bioziden und Pflanzenschutzmitteln",
+      "fr": "Effets écotoxicologiques des produits chimiques, biocides et phytosanitaires",
+      "cat_de": "Chemikaliensicherheit",
+      "cat_fr": "Sécurité des produits chimiques",
+      "content": "chemical_safety"
+    },{
+      "id": "item-32-mosquito",
+      "number": "32",
+      "de": "Einfuhr, Ausbreitung und Einsatz von pathogenen und gebietsfremden Organismen",
+      "fr": "Importation, diffusion et utilisation d’organismes pathogènes ou exotiques",
+      "cat_de": "Biosicherheit",
+      "cat_fr": "Biosécurité",
+      "content": "bio_safety"
+    },{
+      "id": "item-32-mosquito-2",
+      "number": "32",
+      "de": "Einfuhr, Ausbreitung und Einsatz von pathogenen und gebietsfremden Organismen",
+      "fr": "Importation, diffusion et utilisation d’organismes pathogènes ou exotiques",
+      "cat_de": "Biosicherheit",
+      "cat_fr": "Biosécurité",
+      "content": "bio_safety"
+    },{
+      "id": "item-33-corn-field",
+      "number": "33",
+      "de": "Gentechnisch veränderte Organismen (GVO)",
+      "fr": "Organismes génétiquement modifiés (OGM)",
+      "cat_de": "Biosicherheit",
+      "cat_fr": "Biosécurité",
+      "content": "bio_safety"
+    },{
+      "id": "item-34-gas",
+      "number": "34",
+      "de": "Eindämmung Klimawandel (Mitigation), Treibhausgasinventar",
+      "fr": "Atténuation des changements climatiques (mitigation), inventaire des gaz à effet de serre",
+      "cat_de": "Klima",
+      "cat_fr": "Climat",
+      "content": "clima"
+    },{
+      "id": "item-35-glacier",
+      "number": "35",
+      "de": "Auswirkungen des Klimawandels (Impacts)",
+      "fr": "Conséquences des changements climatiques (impacts)",
+      "cat_de": "Klima",
+      "cat_fr": "Climat",
+      "content": "clima"
+    },{
+      "id": "item-36-canons",
+      "number": "36",
+      "de": "Bewältigung Klimawandel (Adaptation)",
+      "fr": "Adaptation aux changements climatiques",
+      "cat_de": "Klima",
+      "cat_fr": "Climat",
+      "content": "clima"
+    },{
+      "id": "item-37-landslide",
+      "number": "37",
+      "de": "Gefahren und Risiken umfassend kennen",
+      "fr": "Connaître les dangers et les risques dans leur intégralité",
+      "cat_de": "Umgang mit Naturgefahren",
+      "cat_fr": "Gestion des dangers naturels",
+      "content": "hazards"
+    },{
+      "id": "item-38-trees",
+      "number": "38",
+      "de": "Massnahmen ganzheitlich planen",
+      "fr": "Planifier des mesures de manière globale",
+      "cat_de": "Umgang mit Naturgefahren",
+      "cat_fr": "Gestion des dangers naturels",
+      "content": "hazards"
+    },{
+      "id": "item-39-safety-net",
+      "number": "39",
+      "de": "Schutzbauten überlastbar auslegen",
+      "fr": "Aménager des ouvrages de protection résistants à la surcharge",
+      "cat_de": "Umgang mit Naturgefahren",
+      "cat_fr": "Gestion des dangers naturels",
+      "content": "hazards"
+    },{
+      "id": "item-39-avalanche",
+      "number": "39",
+      "de": "Schutzbauten überlastbar auslegen",
+      "fr": "Aménager des ouvrages de protection résistants à la surcharge",
+      "cat_de": "Umgang mit Naturgefahren",
+      "cat_fr": "Gestion des dangers naturels",
+      "content": "hazards"
+    },{
+      "id": "item-40-trees",
+      "number": "40",
+      "de": "Störfallvorsorge",
+      "fr": "Prévention des accidents majeurs",
+      "cat_de": "Umgang mit technischen Risiken",
+      "cat_fr": "Gestion des risques techniques",
+      "content": "hazards"
+    },{
+      "id": "item-40-train-tunnel",
+      "number": "40",
+      "de": "Störfallvorsorge",
+      "fr": "Prévention des accidents majeurs",
+      "cat_de": "Umgang mit technischen Risiken",
+      "cat_fr": "Gestion des risques techniques",
+      "content": "hazards"
+    }]
+}
