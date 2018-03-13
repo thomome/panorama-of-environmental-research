@@ -90,7 +90,7 @@ class Composition {
         obj.content.find('.content').empty();
         obj.content.addClass('active');
         obj.content.find('.content').load('data/content/'+content.content+'_'+obj.language+'.html', function() {
-          obj.content.find('h1').prepend('<a class="head-source" target="_blank" href="'+sourceTranslation[obj.language].link+'">'+sourceTranslation[obj.language].text+'</a>')
+          obj.content.find('h1').append('<a class="head-source" target="_blank" href="'+sourceTranslation[obj.language].link+'">'+sourceTranslation[obj.language].text+'</a>')
         });
       }
     } else {
