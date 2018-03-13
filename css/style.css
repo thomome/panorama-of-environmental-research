@@ -57,6 +57,7 @@ body {
 .logo img {
   background: #fff;
   width: 200px;
+  height: 81px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 .control {

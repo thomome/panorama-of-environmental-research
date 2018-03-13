@@ -151,7 +151,7 @@ class Composition {
       });
       obj.control.find('.home-control').html(titleTranslation[obj.language]);
       document.title = titleTranslation[obj.language];
-      obj.logo.html('<a href="https://www.bafu.admin.ch" target="_blank"><img src="/img/logo-bafu-'+obj.language+'.svg"></a>');
+      obj.logo.html('<a href="https://www.bafu.admin.ch" target="_blank"><img src="img/logo-bafu-'+obj.language+'.svg"></a>');
 
       obj.setActiveContent(hash.id);
     });
