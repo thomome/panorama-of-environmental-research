@@ -368,6 +368,7 @@ body {
 #item-23-windpark .anim {
   animation: rotate 4s linear infinite;
   transform-origin: 33% 52%;
+  -moz-transform-origin: 33% 52%;
   transform-box: fill-box;
 }
 #item-25-woodpecker .anim {
