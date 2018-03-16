@@ -11,6 +11,16 @@ class Composition {
     this.clickCoords = [];
 
     this.shapeTable = [];
+
+    this.enableAnimation = true;
+    var userAgent = navigator.userAgent.toLowerCase();
+    var reg = /firefox\/([0-9.]+)/g;
+    var match = reg.exec(userAgent);
+    if(match && match[1]) {
+      if(parseFloat(match[1]) < 55){
+        this.enableAnimation = false;
+      }
+    }
   }
 
   initSVG(){
@@ -42,7 +52,7 @@ class Composition {
                 this.removeClass('hover');
                 obj.tooltipFlag = false;
               });
-            } else if(id.indexOf('anim') !== -1) {
+            } else if(id.indexOf('anim') !== -1 && obj.enableAnimation) {
               el.addClass('anim')
             } else if(id.indexOf('outline') !== -1) {
               el.addClass('outline')
