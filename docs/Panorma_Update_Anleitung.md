@@ -1,6 +1,6 @@
 # Panorama Update Anleitung
 
-> Das Panorama ist mit Javascript, HTML, CSS und JSON aufgebaut.
+> Das Panorama ist mit JavaScript, HTML, CSS und JSON aufgebaut.
 
 ## Inhaltsanpassung
 Anpassungen am Inhalt oder Tooltip sind schnell gemacht. Tooltip Texte können in der Datei [/data/shape.translation.json](/data/shape.translation.json) angepasst werden. Dazu kann ein beliebiger Texteditor verwendet werden. Die Objekte sind wie folgt aufgebaut:
@@ -18,9 +18,9 @@ Die verlinkten Bilder sind unter [/data/content/img/](/data/content/img/) abgele
 ## Panorama Update
 Wenn auf dem Panorama neue Elemente hinzugefügt, gelöscht oder geändert werden, sind die Anpassungen sehr aufwendig.
 
-Zuerst müssen die neuen Elemente in der Datei [/data/panorama_umweltforschung.svg](/data/panorama_umweltforschung.svg) hinzugefügt werden. Dazu öffnet man die Datei mit z.B. Adobe Illustrator und macht man die nötigen visuellen Änderung.
+Zuerst müssen die neuen Elemente in der Datei [/data/panorama_umweltforschung.svg](/data/panorama_umweltforschung.svg) hinzugefügt werden. Dazu öffnet man die Datei z.B. mit Adobe Illustrator und macht die nötigen visuellen Änderung.
 
-Anschliessend müssen die Element diesen Vorgaben entsprechend gruppiert und betitelt werden (`outline` und `trigger` müssen extra erstellt werden):
+Anschliessend müssen die Elemente diesen Vorgaben entsprechend gruppiert und betitelt werden (`outline` und `trigger` müssen extra erstellt werden):
 - Gruppe für ganzes Element `item-[Nummer]-[eindeutige Bezeichnung]`
 - Element/Gruppe für Hover und Klick Auslöser `trigger` (Trigger können von Hand erstellt werden)
 - Gruppe für schwarze Outline `outline` (Outlines können entweder mit dem Pathfinder Tool erstellt werden oder von Hand)
@@ -50,7 +50,7 @@ Wenn alles installiert und konfiguriert ist, kann die JPG Datei über die Webobe
 
 ![Ordner mit Dateien](img/tile-files.jpg)
 
-Alle alten Ordner und Datein aus diesem Ordner [/data/panorama_umweltforschung_files/](/data/panorama_umweltforschung_files/) können gelöscht und durch die neu generierten ersetzt werden.
+Alle alten Ordner und Dateien aus diesem Ordner [/data/panorama_umweltforschung_files/](/data/panorama_umweltforschung_files/) können gelöscht und durch die neu generierten ersetzt werden.
 
 Falls neue Animationen hinzugefügt werden, muss jetzt noch die [/css/style.css](/css/style.css) angepasst werden.
 Dazu müssen die entsprechenden Keyframes erstellt und dem Element zugewiesen werden.
