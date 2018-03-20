@@ -1,5 +1,13 @@
 {
     "shapes": [{
+      "id": "imprint",
+      "number": "",
+      "de": "Impressum",
+      "fr": "Impressum",
+      "cat_de": "",
+      "cat_fr": "",
+      "content": "imprint"
+    },{
       "id": "item-1-footprint",
       "number": "1",
       "de": "Ziele und Messung einer Grünen Wirtschaft in der Schweiz (Fussabdruck)",
