@@ -49,8 +49,9 @@ body {
 }
 .imprint {
   position: absolute;
-  bottom: 96px;
-  right: 0;
+  bottom: 0;
+  font-size: 0.875rem;
+  left: 0;
   z-index: 5000;
   margin: 15px;
   background: #fff;
