@@ -162,6 +162,8 @@ class Composition {
       obj.control.find('.home-control').html(titleTranslation[obj.language]);
       document.title = titleTranslation[obj.language];
       obj.logo.html('<a href="https://www.bafu.admin.ch" target="_blank"><img src="img/logo-bafu-'+obj.language+'.svg"></a>');
+      obj.imprint.html('<a href="#'+obj.language+'&imprint">'+obj.shapeTable['imprint'][obj.language]+'</a>');
+
 
       obj.setActiveContent(hash.id);
     });
@@ -267,6 +269,7 @@ class Composition {
     var obj = this;
     var control = $('<div></div>').addClass('control noselect');
     var bafuLogo = $('<div></div>').addClass('logo');
+    var imprint = $('<div></div>').addClass('imprint');
     var homeControl = $('<div></div>').addClass('home-control clearfix');
     var zoomControl = $('<div></div>').addClass('zoom-control clearfix');
     var zoomInButton = $('<div></div>').addClass('zoom-button zoom-in-button').html('<svg class="icon icon-plus"><use xlink:href="#icon-plus"></use></svg>');
@@ -277,6 +280,8 @@ class Composition {
     control.append(homeControl, zoomControl);
     obj.root.after(control);
     obj.root.after(bafuLogo);
+    obj.root.after(imprint);
+    obj.imprint = imprint;
     obj.logo = bafuLogo;
     obj.control = control;
   }
