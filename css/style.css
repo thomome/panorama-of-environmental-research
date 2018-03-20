@@ -47,9 +47,19 @@ body {
   font-weight: normal;
   overflow: hidden;
 }
+.imprint {
+  position: absolute;
+  bottom: 96px;
+  right: 0;
+  z-index: 5000;
+  margin: 15px;
+  background: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 5px 10px 6px 10px;
+}
 .logo {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
   z-index: 5000;
   margin: 15px;
