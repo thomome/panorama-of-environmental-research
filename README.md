@@ -4,4 +4,4 @@
 
 Die Visualisierung wurde mit JavaScript/jQuery realisiert.
 
-[Update Anleitung](/docs/Panorama_Update_Anleitung.md)
+[Update Anleitung](/docs/Panorma_Update_Anleitung.md)
