@@ -46,6 +46,9 @@ Der Tile Generator ist eine PHP Anwendung die auf jedem Server mit PHP Umgebung 
 - `memory_limit = 300M`
 - [GD- und Image-Funktionen](https://secure.php.net/manual/de/ref.image.php) müssen aktiviert sein
 
+![Tile Generator GUI](img/tile-generator.jpg)
+
+
 Wenn alles installiert und konfiguriert ist, kann die JPG Datei über die Weboberfläche hochgeladen werden. Anschliessend findet man die zerstückelten Bilder under `[Installationspfad]/dest/[Bildname]/`
 
 ![Ordner mit Dateien](img/tile-files.jpg)
